@@ -43,73 +43,60 @@ ion-page.show-page scroll-content{
       text-align: center;
     }
   }
-  .rapide{
-    padding:20px;
-    margin: 20px 0px;
-    h1{
-      /* Rapide: */
-      font-family: Lato-Semibold;
-      font-size: 24px;
-      color: #00D3C7;
-      letter-spacing: 9.89px;
-    }
-    div{
-
-        height: 0;
-      transform-origin: top;
-      transform: scaleY(0);
-      opacity: 0;
-    }
+  .steps{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
-  .rapide:hover{
-    div{
-
-    }
-
+  .rapide{
+    padding:10px;
+    margin: 0px 0px;
+    min-width: 300px;
   }
   .simple{
-
-      padding:20px;
-      margin: 20px 0px;
-
-    div{
-
-        height: 0;
-      transform-origin: top;
-      transform: scaleY(0);
-      opacity: 0;
-    }
+    padding:10px;
+    margin: 0px 0px;
+    min-width: 300px;
   }
   .fiable{
-
-
-      padding:20px;
-      margin: 20px 0px;
-
-    div{
-
-      height: 0;
-      transform-origin: top;
-      transform: scaleY(0);
-      opacity: 0;
-    }
+    padding:10px;
+    margin: 0px 0px;
+    min-width: 300px;
   }
-  .shown{
-      animation-name: grow;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: forwards;
-  }
+
 }
 
-@keyframes grow {
-    from {
-      height: 0;
-      transform: scaleY(0);
-      opacity: 0
-    }
-    to {
-      height: auto;
-      transform: scaleY(1);
-      opacity: 1;
-    }
+.gradient-text {
+  /* Rapide: */
+  font-family: Lato-Semibold;
+  letter-spacing: 10px;
+  font-size: 22px;
+  background: -webkit-linear-gradient(#00D3C6, #03C4B5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 5;
+}
+
+.disc{
+  /* Lorum psu itir manis: */
+  font-family: Lato-Semibold;
+  font-size: 14px;
+  color: #3C3C3C;
+  letter-spacing: 6px;
+  line-height: 3;
+  min-height:300px
+}
+
+.home-btn{
+  /* Rectangle 15: */
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  box-shadow: 0px 0px 11px 0px #DFDFDF;
+  border-radius: 10px;
+  /* Explorer: */
+  font-family: Lato-Semibold;
+  font-size: 16px;
+  color: #00AB99;
+  letter-spacing: 4px;
+  padding: 0px 50px;
 }

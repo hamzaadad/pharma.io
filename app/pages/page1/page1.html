@@ -7,26 +7,35 @@
       <img class="menu-icon" src="build/imgs/menu.png" alt="" menuToggle/>
     </div>
     <div class="core">
-      <h1>Solution d'Urgence</h1>
-      <div class="rapide">
-        <h2>Rapide</h2>
-        <div >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis ultricies ipsum, vitae mattis mauris finibus varius. Suspendisse sodales sapien dolor, sed iaculis metus tristique non. Cras dictum sollicitudin massa, quis pulvinar purus placerat eget. Sed dapibus, felis ac ullamcorper tristique, nulla purus fermentum ipsum, sed ullamcorper ante sapien sed elit. Duis id odio in sem mattis ultrices. Nulla sagittis purus et nunc consectetur consectetur. Suspendisse potenti. Fusce a euismod nisi. Praesent tempor egestas nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas lacinia rhoncus magna a fringilla.
-        </div>
-      </div>
-      <div class="simple">
-        <h2>Simple</h2>
-        <div class="" [ngClass]="{'shown': step=='simple'}">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis ultricies ipsum, vitae mattis mauris finibus varius. Suspendisse sodales sapien dolor, sed iaculis metus tristique non. Cras dictum sollicitudin massa, quis pulvinar purus placerat eget. Sed dapibus, felis ac ullamcorper tristique, nulla purus fermentum ipsum, sed ullamcorper ante sapien sed elit. Duis id odio in sem mattis ultrices. Nulla sagittis purus et nunc consectetur consectetur. Suspendisse potenti. Fusce a euismod nisi. Praesent tempor egestas nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas lacinia rhoncus magna a fringilla.
-        </div>
-      </div>
-      <div class="fiable">
-        <h2>Fiable</h2>
-        <div class="" [ngClass]="{'shown': step=='fiable'}">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis ultricies ipsum, vitae mattis mauris finibus varius. Suspendisse sodales sapien dolor, sed iaculis metus tristique non. Cras dictum sollicitudin massa, quis pulvinar purus placerat eget. Sed dapibus, felis ac ullamcorper tristique, nulla purus fermentum ipsum, sed ullamcorper ante sapien sed elit. Duis id odio in sem mattis ultrices. Nulla sagittis purus et nunc consectetur consectetur. Suspendisse potenti. Fusce a euismod nisi. Praesent tempor egestas nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas lacinia rhoncus magna a fringilla.
-        </div>
-      </div>
+      <ion-slides #splash [options]="slidOptions">
+        <ion-slide>
+          <div class="rapide" >
+            <h2 class="gradient-text">Rapide</h2>
+            <div class="disc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis ultricies ipsum, vitae mattis mauris finibus varius.
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="simple">
+            <h2 class="gradient-text">Simple</h2>
+            <div class="disc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis ultricies ipsum, vitae mattis mauris finibus varius.
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="fiable">
+            <h2 class="gradient-text">Fiable</h2>
+            <div class="disc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis ultricies ipsum, vitae mattis mauris finibus varius.
+            </div>
+          </div>
+        </ion-slide>
+      </ion-slides>
+      <button type="button" class="home-btn" name="button">Utiliser</button>
     </div>
+
   </div>
 
 
