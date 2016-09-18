@@ -1,16 +1,15 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { Slides } from 'ionic-angular';
-import { ViewChild } from '@angular/core';
-
+import { Component, ViewChild } from '@angular/core';
+import { NavController, Slides } from 'ionic-angular';
+import { home } from '../home/home';
 
 @Component({
-  templateUrl: 'build/pages/page1/page1.html'
+  templateUrl: 'build/pages/splash/splash.html'
 })
-export class Page1 {
+export class splash {
   public step:string;
   public steps:string[]
   public index:number
+  public nav:NavController;
   @ViewChild('splash') slider: Slides;
 
   slidOptions = {
@@ -18,6 +17,7 @@ export class Page1 {
      loop: true
    };
   constructor(public navCtrl: NavController) {
+    this.nav = navCtrl;
     this.steps = ['rapide', 'simple', 'fiable'];
     this.index = 0;
     this.move(this.steps[this.index]);
@@ -33,6 +33,9 @@ export class Page1 {
       self.index++
     }, 2000);
 
+  }
+  goToPage(){
+    this.nav.push(home);
   }
   goToSlide() {
    this.slider.slideNext(500);

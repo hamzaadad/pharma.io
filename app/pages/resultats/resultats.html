@@ -1,0 +1,35 @@
+
+
+<ion-content padding class="page1">
+  <div class="wrapper">
+    <div class="header">
+      <img class="logo" src="build/imgs/big_logo.png" alt="" size="20"/>
+      <div class="gradient_text_logo">
+        PHARMA
+      </div>
+      <img class="menu-icon" src="build/imgs/Menu-icon.png" alt="" menuToggle/>
+    </div>
+
+    <div class="core less-center">
+      <div class="loader" *ngIf="isLoading">
+        <div class="seekloader" *ngIf="!citySelector"></div>
+        <h3 class="gradient-text seekText" *ngIf="!citySelector">Preparation des donnees...</h3>
+      </div>
+
+      <div class="" *ngIf="citySelector">
+        city selector
+      </div>
+      <div class="result_list" *ngIf="!isLoading">
+        <h3 class="gradient-text seekText resultText">Resultas de recherch: </h3>
+        <div class="reult_item" *ngFor="let pharma of pharmas">
+
+          {{pharma.name}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</ion-content>

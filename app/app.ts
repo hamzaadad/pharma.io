@@ -2,8 +2,9 @@ import { Component, ViewChild } from '@angular/core';
 import { ionicBootstrap, Platform, Nav } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 
-import { Page1 } from './pages/page1/page1';
-import { Page2 } from './pages/page2/page2';
+import { splash } from './pages/splash/splash';
+import { home } from './pages/home/home';
+
 
 @Component({
   templateUrl: 'build/app.html'
@@ -11,18 +12,10 @@ import { Page2 } from './pages/page2/page2';
 class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Page2;
-
-  pages: Array<{title: string, component: any}>;
+  rootPage: any = splash;
 
   constructor(public platform: Platform) {
     this.initializeApp();
-
-    // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Page uno', component: Page1 }
-    ];
-
   }
 
   initializeApp() {
@@ -32,7 +25,7 @@ class MyApp {
   }
 
   openPage(page) {
-    this.nav.setRoot(page.component);
+    //this.nav.setRoot(page.component);
   }
 }
 

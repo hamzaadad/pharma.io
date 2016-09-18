@@ -3,10 +3,16 @@
 <ion-content padding class="page1">
   <div class="wrapper">
     <div class="header">
-      <img class="logo" src="build/imgs/logo.png" alt="" />
-      <img class="menu-icon" src="build/imgs/menu.png" alt="" menuToggle/>
+      <img class="logo" src="build/imgs/big_logo.png" alt="" size="20"/>
+      <div class="gradient_text_logo">
+        PHARMA
+      </div>
+      <div class="whiteout">
+
+      </div>
+      <img class="menu-icon" src="build/imgs/Menu-icon.png" alt="" menuToggle/>
     </div>
-    <div class="core">
+    <div class="core center">
       <ion-slides #splash [options]="slidOptions">
         <ion-slide>
           <div class="rapide" >
@@ -33,7 +39,7 @@
           </div>
         </ion-slide>
       </ion-slides>
-      <button type="button" class="home-btn" name="button">Utiliser</button>
+      <button type="button" (click)="goToPage()" class="home-btn" name="button">Utiliser</button>
     </div>
 
   </div>

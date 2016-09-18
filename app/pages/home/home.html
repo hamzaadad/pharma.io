@@ -10,17 +10,17 @@
       <img class="menu-icon" src="build/imgs/Menu-icon.png" alt="" menuToggle/>
     </div>
 
-    <div class="core">
+    <div class="core center">
       <div class="big_icon">
         <img src="build/imgs/big_logo.png" [ngClass]="{'retat': isRotating }" alt="" />
       </div>
       <div class="gradient_text_logo">
         PHARMA
       </div>
-      <div class="hollowbtn i-geo">
+      <div class="hollowbtn i-geo" (click)="goToResult('geo')">
           Me localiser
       </div>
-      <div class="hollowbtn">
+      <div class="hollowbtn" (click)="goToResult('city')">
           Par ville
       </div>
     </div>

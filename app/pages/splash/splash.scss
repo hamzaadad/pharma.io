@@ -14,7 +14,9 @@ ion-page.show-page scroll-content{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  position: fixed;
+      top: 0;
+      width: 100%;
 }
 
 .logo{
@@ -124,4 +126,14 @@ ion-page.show-page scroll-content{
     min-width: 300px;
     width: 300px;
     margin: 20px 0;
+}
+
+.whiteout{
+  padding: 0px 20px;
+}
+.center{
+  padding-top: 100px!important;
+}
+.less-center{
+  padding-top: 60px !important;
 }
