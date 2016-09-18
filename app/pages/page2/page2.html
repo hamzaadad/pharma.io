@@ -1,23 +1,18 @@
-<ion-header>
-  <ion-navbar>
-    <button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Page 2</ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
+
+<ion-content padding class="page1">
+  <div class="wrapper">
+    <div class="header">
+      <img class="logo" src="build/imgs/logo.png" alt="" />
+      <img class="menu-icon" src="build/imgs/menu.png" alt="" menuToggle/>
+    </div>
+
+    <div class="core">
+      <img src="build/pages/page2/big_logo.png" alt="" />
+    </div>
   </div>
+
+
+
+
 </ion-content>
