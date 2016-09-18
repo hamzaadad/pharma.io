@@ -1,0 +1,31 @@
+.gradient_text_logo {
+  /* Rapide: */
+  font-family: Lato-Semibold;
+  letter-spacing: 10px;
+  font-size: 14px;
+  background: -webkit-linear-gradient(#00D3C6, #03C4B5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 4;
+}
+.core{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  .gradient_text_logo{
+    font-size:20px
+  }
+}
+.big_icon{
+  img{
+    max-width: 160px
+  }
+}
+
+.i-geo{
+  background: url('/build/imgs/geo-icon.png') no-repeat;
+  background-position-y: center;
+  background-position-x: 90%;
+  background-size: 15px;
+}
