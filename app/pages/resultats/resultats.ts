@@ -20,7 +20,7 @@ export class resultats {
         {
           _id: 1,
           name: 'pharma X',
-          adress: 'lot warrda meknes',
+          address: 'lot warrda meknes',
           geo:{
             lat:34635345,
             long:345345345
@@ -33,7 +33,7 @@ export class resultats {
         {
           _id: 2,
           name: 'pharma X',
-          adress: 'lot warrda meknes',
+          address: 'lot warrda meknes',
           geo:{
             lat:34635345,
             long:345345345
@@ -46,7 +46,7 @@ export class resultats {
         {
           _id: 3,
           name: 'pharma X',
-          adress: 'lot warrda meknes',
+          address: 'lot warrda meknes',
           geo:{
             lat:34635345,
             long:345345345
@@ -59,7 +59,7 @@ export class resultats {
         {
           _id: 4,
           name: 'pharma X',
-          adress: 'lot warrda meknes',
+          address: 'lot warrda meknes',
           geo:{
             lat:34635345,
             long:345345345
@@ -72,7 +72,7 @@ export class resultats {
         {
           _id: 1,
           name: 'pharma X',
-          adress: 'lot warrda meknes',
+          address: 'lot warrda meknes',
           geo:{
             lat:34635345,
             long:345345345
@@ -85,7 +85,7 @@ export class resultats {
         {
           _id: 2,
           name: 'pharma X',
-          adress: 'lot warrda meknes',
+          address: 'lot warrda meknes',
           geo:{
             lat:34635345,
             long:345345345
@@ -98,7 +98,7 @@ export class resultats {
         {
           _id: 3,
           name: 'pharma X',
-          adress: 'lot warrda meknes',
+          address: 'lot warrda meknes',
           geo:{
             lat:34635345,
             long:345345345
@@ -111,7 +111,7 @@ export class resultats {
         {
           _id: 4,
           name: 'pharma X',
-          adress: 'lot warrda meknes',
+          address: 'lot warrda meknes',
           geo:{
             lat:34635345,
             long:345345345
@@ -126,7 +126,7 @@ export class resultats {
         let self = this;
         setTimeout(function(){
           self.isLoading = false;
-        }, 3000);
+        }, 1000);
         //do geo stuff
       }else{
         this.citySelector = true

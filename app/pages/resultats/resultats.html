@@ -21,9 +21,12 @@
       </div>
       <div class="result_list" *ngIf="!isLoading">
         <h3 class="gradient-text seekText resultText">Resultas de recherch: </h3>
-        <div class="reult_item" *ngFor="let pharma of pharmas">
-
+        <div class="reult_item" *ngFor="let pharma of pharmas" (click)="details(pharma)">
+          <img src="{{pharma.image}}" alt="" />
           {{pharma.name}}
+          <div class="address">
+            {{pharma.address}}
+          </div>
         </div>
       </div>
     </div>
